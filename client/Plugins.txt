@@ -1,0 +1,9 @@
+plugins required
+cordova plugin add cordova-plugin-appversion
+cordova plugin add cordova-plugin-file-transfer
+cordova plugin add cordova-plugin-zip
+cordova plugin add cordova-plugin-dialogs
+cordova plugin add cordova-plugin-device
+cordova plugin add cordova-plugin-console
+
+
