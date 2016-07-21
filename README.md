@@ -1,4 +1,4 @@
-# UniversalAppServer
+# CordovaUniversalAppServer
 A Cordova/PhoneGap environment which allows you to update Android and iOS apps on-the-fly and allows A-B testing of User Interfaces/Features.
 
 #Summary
