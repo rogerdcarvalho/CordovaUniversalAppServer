@@ -4,7 +4,7 @@ A Cordova plugin to unzip files in Android and iOS.
 
 ## Installation
 
-    cordova plugin add https://github.com/MobileChromeApps/zip.git
+    cordova plugin add cordova-plugin-zip
 
 ## Usage
 
@@ -29,7 +29,10 @@ file size of the zip file.
 
 ## Release Notes
 
-### 3.0.0 (May 1, 2014)
+### 3.1.0 (Feb 23, 2016)
+* Updated SSZipArchive (ios lib) to 1.1
+
+### 3.0.0 (May 1, 2015)
 * Updated SSZipArchive (ios lib) to 0.2.1
 * Update file plugin dependency to use npm version (cordova-plugin-file)
 

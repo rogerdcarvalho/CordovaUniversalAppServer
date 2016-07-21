@@ -1,4 +1,5 @@
-cordova.define("cordova-plugin-dialogs.notification", function(require, exports, module) { /*
+cordova.define("cordova-plugin-dialogs.notification", function(require, exports, module) {
+/*
  *
  * Licensed to the Apache Software Foundation (ASF) under one
  * or more contributor license agreements.  See the NOTICE file
@@ -37,7 +38,7 @@ module.exports = {
      * @param {String} buttonLabel          Label of the close button (default: OK)
      */
     alert: function(message, completeCallback, title, buttonLabel) {
-        var _title = (title || "Alert");
+        var _title = (typeof title === "string" ? title : "Alert");
         var _buttonLabel = (buttonLabel || "OK");
         exec(completeCallback, null, "Notification", "alert", [message, _title, _buttonLabel]);
     },
@@ -52,7 +53,7 @@ module.exports = {
      * @param {Array} buttonLabels          Array of the labels of the buttons (default: ['OK', 'Cancel'])
      */
     confirm: function(message, resultCallback, title, buttonLabels) {
-        var _title = (title || "Confirm");
+        var _title = (typeof title === "string" ? title : "Confirm");
         var _buttonLabels = (buttonLabels || ["OK", "Cancel"]);
 
         // Strings are deprecated!
@@ -92,8 +93,8 @@ module.exports = {
      * @param {String} defaultText          Textbox input value (default: empty string)
      */
     prompt: function(message, resultCallback, title, buttonLabels, defaultText) {
-        var _message = (message || "Prompt message");
-        var _title = (title || "Prompt");
+        var _message = (typeof message === "string" ? message : "Prompt message");
+        var _title = (typeof title === "string" ? title : "Prompt");
         var _buttonLabels = (buttonLabels || ["OK","Cancel"]);
         var _defaultText = (defaultText || "");
         exec(resultCallback, null, "Notification", "prompt", [_message, _title, _buttonLabels, _defaultText]);

@@ -1,3 +1,20 @@
+/*
+ * Developed by Roger Carvalho for RDC Media Ltd.
+ * This file is part of CordovaUniversalAppServer.
+ *
+ * CordovaUniversalAppServer is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 3 of the License, or
+ * (at your option) any later version.
+ *
+ * CordovaUniversalAppServer is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * See the GNU General Public License at <http://www.gnu.org/licenses/>.
+ */
+
 var ServerRequest = function (params)
 /*
 ServerRequest object, manages api calls to remote servers and stores response data
@@ -55,6 +72,10 @@ ServerRequest object, manages api calls to remote servers and stores response da
         
         // Check request status
         request.onreadystatechange = function() {
+            
+            console.log('Server responded with ' + request.responseText);
+
+            
             if (request.readyState == 4) {
                 
                 if(request.responseText) {
@@ -90,6 +111,7 @@ ServerRequest object, manages api calls to remote servers and stores response da
     }
 }
 function isValidJson(str)
+//Tests if a json is valid
 {
     try
     {

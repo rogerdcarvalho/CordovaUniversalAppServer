@@ -1,4 +1,5 @@
-cordova.define("cordova-plugin-appversion.RareloopAppVersion", function(require, exports, module) { /**
+cordova.define("cordova-plugin-appversion.RareloopAppVersion", function(require, exports, module) {
+/**
  * Copyright (c) 2015 Rareloop Ltd
  * 
  * Permission is hereby granted, free of charge, to any person obtaining a copy

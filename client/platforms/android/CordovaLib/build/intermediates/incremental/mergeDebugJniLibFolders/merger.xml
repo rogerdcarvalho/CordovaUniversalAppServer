@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/Roger/Development/GitHub/HTML5/UniversalAppServer/client/platforms/android/CordovaLib/src/main/jniLibs"/></dataSet><dataSet config="debug"><source path="/Users/Roger/Development/GitHub/HTML5/UniversalAppServer/client/platforms/android/CordovaLib/src/debug/jniLibs"/></dataSet></merger>
