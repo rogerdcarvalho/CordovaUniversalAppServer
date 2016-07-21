@@ -5,9 +5,7 @@ This is a Cordova/PhoneGap environment, which allows you to update Android and i
 This solution allows Cordova/PhoneGap developers to update their mobile apps on-the-fly and run multiple versions of at the same time, without needing to go through Google Play/Apple AppStore. It also allows A-B testing of features and/or User Experiences, as the same app bundle can display different hosted versions of the app, depending on how it identifies itself to the App Server.
 
 #How it works
-
 ![alt tag](https://raw.githubusercontent.com/rogerdcarvalho/CordovaUniversalAppServer/master/Illustration.png)
-
 This solution consists of 2 elements.
 
 1. A php-based server solution, which serves different versions of the apps to mobile clients
