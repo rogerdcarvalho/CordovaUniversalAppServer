@@ -6,6 +6,7 @@ This solution allows Cordova/PhoneGap developers to update their mobile apps on-
 
 #How it works
 ![alt tag](https://raw.githubusercontent.com/rogerdcarvalho/CordovaUniversalAppServer/master/Illustration.png)
+
 This solution consists of 2 elements.
 
 1. A php-based server solution, which serves different versions of the apps to mobile clients
