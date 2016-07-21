@@ -24,9 +24,9 @@ The actual code of your app is stored in the 'www/bundle' directory of the clien
 The most important files to read through to understand the way this all works are 'index.php' in the server directory and 'www/js/index.js' and 'www/js/filemanager.js/' in the client directory. Also look at 'version.ini' in each of the branch subdirectories of the server to see how the server handles versioning of bundles.
 
 #How to use
-1. Simply upload the contents of the server directory to your own server. The contents of the server directory are for 4 template branches of a sample Cordova/PhoneGap app, being 'alpha', 'beta', 'dev' and 'production'. In your implementation you can have as many branches as you'd like, that can serve AB-Testing or whichever form of product differentiation suits your app. All you have to do is create a new directory within either ios or android on the server.
+- Simply upload the contents of the server directory to your own server. The contents of the server directory are for 4 template branches of a sample Cordova/PhoneGap app, being 'alpha', 'beta', 'dev' and 'production'. In your implementation you can have as many branches as you'd like, that can serve AB-Testing or whichever form of product differentiation suits your app. All you have to do is create a new directory within either ios or android on the server.
 
-2. Next, open client/www/js/index.js and enter the domain/ip address of your server (make sure you end it with a '/', other wise the client will not correctly download bundles.):
+- Next, open client/www/js/index.js and enter the domain/ip address of your server (make sure you end it with a '/', other wise the client will not correctly download bundles.):
 ```
 var remoteServer = "http://yourserver.com/";
 //The server that is hosting the universal appserver api. Ensure it is the root directory of any hosted releases and that it ends with a '/'
@@ -38,11 +38,11 @@ var clientType = "beta";
 //The type of updates this app will download. Default options are dev, alpha, beta and production. 
 //You can add any additional types to support A/B testing or user group specific versions
 ```
-(line 29 in index.js).
+(index.js, line 29).
 
-3. To host your own app instead of the sample code, simply build your solution with phonegap, and copy the contents of 'platforms/ios/www' or 'platforms/android/www' to the 'www/bundle' directory of the client and server directories 'alpha', 'beta', 'dev' or 'production'. It is important to use the 'platforms/www'directory instead of the default 'www' directory.
+- To host your own app instead of the sample code, simply build your solution with phonegap, and copy the contents of 'platforms/ios/www' or 'platforms/android/www' to the 'www/bundle' directory of the client and server directories 'alpha', 'beta', 'dev' or 'production'. It is important to use the 'platforms/www'directory instead of the default 'www' directory.
 
-4. The app only downloads versions from the server that are newer than the version locally stored. To manage versioning, each branch directory on the server should have a version.ini in it.
+- The app only downloads versions from the server that are newer than the version locally stored. To manage versioning, each branch directory on the server should have a version.ini in it.
 
 #Version.ini
 Each branch of your code should have a file in the root called 'version.ini'. This is used by the server to determine if the client should update or not. 'version.ini' has the following options:
